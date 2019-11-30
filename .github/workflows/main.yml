@@ -4,9 +4,10 @@ jobs:
   one:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        echo "::set-env name=TARBALL::bag"
-        echo $TARBALL
+      - name: chk
+         run: |
+            echo "::set-env name=TARBALL::bag"
+            echo "$TARBALL"
 #    steps:
 #      - name: Dump GitHub context
 ##        env:
