@@ -7,7 +7,7 @@ jobs:
       - name: chk
         run: |
           echo "::set-env name=TARBALL::bag"
-          echo "$TARBALL"
+          echo ${TARBALL}
 #    steps:
 #      - name: Dump GitHub context
 ##        env:
