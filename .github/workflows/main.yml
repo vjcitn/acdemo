@@ -5,8 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: chk
+        env:
+          VAR1: abc
         run: |
           echo "::set-env name=TARBALL::`echo bag`"
+          echo ${VAR1}
           echo ${TARBALL}
 #    steps:
 #      - name: Dump GitHub context
